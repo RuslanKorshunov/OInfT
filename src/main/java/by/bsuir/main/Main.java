@@ -1,11 +1,17 @@
 package by.bsuir.main;
 
+import by.bsuir.algorithm.Method;
+import by.bsuir.algorithm.firstLab.MgMethod;
 import by.bsuir.entity.Matrix;
 
 public class Main {
     private static final String FIELD = "=================";
 
     public static void main(String... args) {
+        firtsLab();
+    }
+
+    private static void firtsLab() {
         System.out.println(FIELD + "First lab" + FIELD);
         int d = -1;
         double q = -4.25;
@@ -31,5 +37,9 @@ public class Main {
 
         System.out.println(matrix);
         System.out.println(result);
+
+        Method method = new MgMethod();
+        method.math(matrix, result);
+        System.out.println(FIELD + "First lab finished" + FIELD);
     }
 }
